@@ -1,3 +1,5 @@
+﻿[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23299161.svg)](https://doi.org/10.5281/zenodo.23299161)
+
 # Interval reuse across ground displacement products: analysis archive
 
 Reproducible analysis code and executed numerical results for the manuscript
