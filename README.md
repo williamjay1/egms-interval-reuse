@@ -1,4 +1,4 @@
-﻿[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23299161.svg)](https://doi.org/10.5281/zenodo.23299161)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23299161.svg)](https://doi.org/10.5281/zenodo.23299161)
 
 # Interval reuse across ground displacement products: analysis archive
 
@@ -55,9 +55,11 @@ python analysis/build_nature_figures.py
 The table and figure drivers read the packaged `results/` outputs, so tables and
 figures can be regenerated without the raw observations. Figures are written as
 vector PDF and SVG plus native 1200 dpi PNG at 130.7 mm width, the single column
-text width of the journal template. Each export is checked for a minimum lettering
-size of 8 pt, for text outside the canvas and for collisions between text elements
-before the file is written.
+text width of the journal template. Before any file is written, the export audit
+checks every figure for a minimum lettering size of 8 pt, for text outside the
+canvas, for collisions between text elements, and for text that comes closer than
+about 1.5 mm to a neighbouring panel, so that labels never sit on top of the
+artwork of another panel.
 
 ## Key outputs
 
