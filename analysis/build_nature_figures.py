@@ -139,6 +139,36 @@ def export(fig, name, data_contract):
         raise AssertionError(f"{name}: outside text {outside}")
     if collisions:
         raise AssertionError(f"{name}: colliding text {collisions[:8]}")
+    def owner_of(artist):
+        for ax in fig.axes:
+            if artist in (ax.xaxis.label, ax.yaxis.label, ax.title):
+                return ax
+            if artist in ax.get_xticklabels() or artist in ax.get_yticklabels():
+                return ax
+            if artist in ax.texts:
+                return ax
+            legend = ax.get_legend()
+            if legend is not None and artist in legend.get_texts():
+                return ax
+        return None
+    intruding = []
+    for artist in fig.findobj(match=Text):
+        if not artist.get_visible() or not artist.get_text().strip():
+            continue
+        owner = owner_of(artist)
+        if owner is None:
+            continue
+        b = artist.get_window_extent(renderer)
+        for other in fig.axes:
+            if other is owner:
+                continue
+            ob = other.get_window_extent(renderer)
+            ox = min(ob.x1, b.x1) - max(ob.x0, b.x0)
+            oy = min(ob.y1, b.y1) - max(ob.y0, b.y0)
+            if oy > 4.0 and ox > -6.0:
+                intruding.append((artist.get_text()[:20], round(-ox, 1)))
+    if intruding:
+        raise AssertionError(f"{name}: text too close to another panel {intruding[:8]}")
     files = {}
     for suffix in ("pdf", "svg", "png"):
         p = OUT / f"{name}.{suffix}"
@@ -186,7 +216,7 @@ def prepare_basemap(path):
 def figure1(core, cells, basemap):
     fig = plt.figure(figsize=(WIDTH_MM*MM, 112*MM))
     gs = fig.add_gridspec(2, 4, left=.095, right=.98, bottom=.20, top=.91,
-                          height_ratios=(1.15,1), width_ratios=(1.0,1,1,1), hspace=.55, wspace=.42)
+                          height_ratios=(1.15,1), width_ratios=(1.0,1,1,1), hspace=.55, wspace=.68)
     ax = fig.add_subplot(gs[0,0])
     patches = [Polygon(np.asarray(x), closed=True) for x in basemap["rings"]]
     ax.add_collection(PatchCollection(patches, facecolor="#EAEAEA", edgecolor="#B8B8B8", linewidth=.35))
@@ -194,7 +224,7 @@ def figure1(core, cells, basemap):
     ax.set_aspect('auto')
     ax.set_title("Product locations", pad=9)
     ax.set_xlabel("Longitude (°E)"); ax.set_ylabel("Latitude (°N)")
-    label(ax, "a", x=-.32)
+    label(ax, "a", x=-.46)
     for n, r in enumerate(REGIONS,1):
         rr=[x for x in cells if x["target"]==r and x["protocol"]=="source_full_global"]
         weights=np.asarray([float(x['measurement_points_in_cell']) for x in rr])
@@ -263,8 +293,8 @@ def figure2(core):
 
 def figure3(summary):
     fig=plt.figure(figsize=(WIDTH_MM*MM,127*MM))
-    gs=fig.add_gridspec(2,2,left=.155,right=.965,bottom=.15,top=.82,hspace=.8,wspace=.4,height_ratios=(1,1.15))
-    ax=fig.add_subplot(gs[0,0]);label(ax,'a')
+    gs=fig.add_gridspec(2,2,left=.155,right=.965,bottom=.15,top=.82,hspace=.8,wspace=.55,width_ratios=(.95,1),height_ratios=(1,1.15))
+    ax=fig.add_subplot(gs[0,0]);label(ax,'a',x=-.30)
     vals=np.asarray([[numeric(find(summary,r,f'calibration_{c}_full_global'),'coverage',100) for c in REGIONS] for r in REGIONS])
     im=ax.pcolormesh(np.arange(4)-.5,np.arange(4)-.5,vals,cmap=cmc.batlow,vmin=80,vmax=95,shading='flat',rasterized=False)
     ax.invert_yaxis()
@@ -273,7 +303,7 @@ def figure3(summary):
     ax.set_xticks(range(3));ax.set_xticklabels([NAMES[r] for r in REGIONS]);ax.set_yticks(range(3));ax.set_yticklabels([NAMES[r] for r in REGIONS]);ax.set_xlabel('Calibration product')
     ax.set_title('Same Amsterdam predictor',pad=9)
     cax=fig.add_axes([.155,.493,.32,.014]);cb=fig.colorbar(im,cax=cax,orientation='horizontal');cb.solids.set_rasterized(False);cb.set_label('Coverage (%)',labelpad=2);cb.set_ticks((80,85,90,95))
-    ax=fig.add_subplot(gs[0,1]);label(ax,'b')
+    ax=fig.add_subplot(gs[0,1]);label(ax,'b',x=-.18)
     for i,r in enumerate(REGIONS):
         row=find(summary,r,'source_full_global')
         for dy,key,marker in [(-.13,'coverage','o'),(.13,'equal_cell_coverage','s')]:

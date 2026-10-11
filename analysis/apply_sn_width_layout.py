@@ -17,7 +17,10 @@ PATCHES = [
     ("gs = fig.add_gridspec(2, 4, left=.065, right=.975, bottom=.20, top=.91,\n"
      "                          height_ratios=(1.15,1), width_ratios=(1.08,1,1,1), hspace=.55, wspace=.5)",
      "gs = fig.add_gridspec(2, 4, left=.095, right=.98, bottom=.20, top=.91,\n"
-     "                          height_ratios=(1.15,1), width_ratios=(1.0,1,1,1), hspace=.55, wspace=.42)"),
+     "                          height_ratios=(1.15,1), width_ratios=(1.0,1,1,1), hspace=.55, wspace=.68)"),
+    # The narrower map panel needs the panel letter further left so that it clears
+    # the centred panel title.
+    ('label(ax, "a", x=-.32)', 'label(ax, "a", x=-.46)'),
 
     # Figure 1: the two lower annotations collide at the narrower canvas, so each
     # one is shortened and repositioned; spacing detail moves to the caption.
@@ -39,6 +42,14 @@ PATCHES = [
      "    xt=('Src\\nfull','Src\\n12','Tgt\\n12','Tgt\\nroll','Src\\ngrp')"),
     ("        ax=fig.add_subplot(gs[1,j]);label(ax,chr(99+j))",
      "        ax=fig.add_subplot(gs[1,j]);label(ax,chr(99+j),x=-.20)"),
+
+    # Figure 3: widen the column gap so that panel b's product labels clear the
+    # heatmap of panel a.
+    ("    gs=fig.add_gridspec(2,2,left=.155,right=.965,bottom=.15,top=.82,hspace=.8,wspace=.4,height_ratios=(1,1.15))",
+     "    gs=fig.add_gridspec(2,2,left=.155,right=.965,bottom=.15,top=.82,hspace=.8,wspace=.55,width_ratios=(.95,1),height_ratios=(1,1.15))"),
+    # Panel letters must clear the wide centred panel titles at this width.
+    ("ax=fig.add_subplot(gs[0,0]);label(ax,'a')", "ax=fig.add_subplot(gs[0,0]);label(ax,'a',x=-.30)"),
+    ("ax=fig.add_subplot(gs[0,1]);label(ax,'b')", "ax=fig.add_subplot(gs[0,1]);label(ax,'b',x=-.18)"),
 
     # Figure 5: axis titles need extra clearance from wide numeric tick labels.
     ("ax.set(xlim=(.47,.98),ylim=(20,104),xticks=(.5,.7,.9));ax.set_xlabel('Source roughness quantile')",
@@ -90,7 +101,37 @@ PATCHES = [
      '    if outside:\n'
      '        raise AssertionError(f"{name}: outside text {outside}")\n'
      '    if collisions:\n'
-     '        raise AssertionError(f"{name}: colliding text {collisions[:8]}")'),
+     '        raise AssertionError(f"{name}: colliding text {collisions[:8]}")\n'
+     '    def owner_of(artist):\n'
+     '        for ax in fig.axes:\n'
+     '            if artist in (ax.xaxis.label, ax.yaxis.label, ax.title):\n'
+     '                return ax\n'
+     '            if artist in ax.get_xticklabels() or artist in ax.get_yticklabels():\n'
+     '                return ax\n'
+     '            if artist in ax.texts:\n'
+     '                return ax\n'
+     '            legend = ax.get_legend()\n'
+     '            if legend is not None and artist in legend.get_texts():\n'
+     '                return ax\n'
+     '        return None\n'
+     '    intruding = []\n'
+     '    for artist in fig.findobj(match=Text):\n'
+     '        if not artist.get_visible() or not artist.get_text().strip():\n'
+     '            continue\n'
+     '        owner = owner_of(artist)\n'
+     '        if owner is None:\n'
+     '            continue\n'
+     '        b = artist.get_window_extent(renderer)\n'
+     '        for other in fig.axes:\n'
+     '            if other is owner:\n'
+     '                continue\n'
+     '            ob = other.get_window_extent(renderer)\n'
+     '            ox = min(ob.x1, b.x1) - max(ob.x0, b.x0)\n'
+     '            oy = min(ob.y1, b.y1) - max(ob.y0, b.y0)\n'
+     '            if oy > 4.0 and ox > -6.0:\n'
+     '                intruding.append((artist.get_text()[:20], round(-ox, 1)))\n'
+     '    if intruding:\n'
+     '        raise AssertionError(f"{name}: text too close to another panel {intruding[:8]}")'),
 ]
 
 
