@@ -1,0 +1,9 @@
+{
+  "resource_instrumentation_active": false,
+  "output_directory_creation_utc": "2026-10-11T11:09:02.938571+00:00",
+  "results_json_write_utc": "2026-10-11T11:10:51.875531+00:00",
+  "artifact_endpoint_elapsed_seconds": 108.93695950508118,
+  "wall_seconds": null,
+  "os_peak_working_set_bytes": null,
+  "scope": "Observed artifact time endpoints; do not describe this as an instrumented process runtime or RAM peak"
+}

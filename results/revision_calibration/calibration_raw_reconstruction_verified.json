@@ -1,0 +1,154 @@
+{
+  "checks": {
+    "status": "PASS",
+    "main_summary_rows": 90,
+    "factorial_summary_rows": 27,
+    "finite_metric_values_checked": 56472,
+    "fixed_center_same_population_rows_checked": 54,
+    "rolling_windows_verified_as_exact_latest_k_strictly_mature_dates": 534,
+    "selection_decompositions_checked": 30,
+    "largest_absolute_decomposition_identity_error": 1.734723475976807e-16,
+    "tail_count_identity": "PASS",
+    "interval_exceedance_rate_identity": "PASS",
+    "factorial_MAE_interaction_identity": "PASS"
+  },
+  "independent_checks": {
+    "status": "PASS",
+    "main_summary_rows": 90,
+    "factorial_summary_rows": 27,
+    "finite_metric_values_checked": 56472,
+    "fixed_center_same_population_rows_checked": 54,
+    "rolling_windows_verified_as_exact_latest_k_strictly_mature_dates": 534,
+    "selection_decompositions_checked": 30,
+    "largest_absolute_decomposition_identity_error": 1.734723475976807e-16,
+    "tail_count_identity": "PASS",
+    "interval_exceedance_rate_identity": "PASS",
+    "factorial_MAE_interaction_identity": "PASS"
+  },
+  "independent_reconstruction_comparison": {
+    "status": "PASS",
+    "comparison_type": "Exact scientific field equality; no runtime/resource/path equality claim",
+    "csv_files": {
+      "calibration_usage.csv": {
+        "scientific_fields_exactly_equal": 12104,
+        "finite_numeric_fields_exactly_equal": 3026,
+        "excluded_fields": [],
+        "maximum_numeric_difference": 0.0
+      },
+      "cell_availability.csv": {
+        "scientific_fields_exactly_equal": 72240,
+        "finite_numeric_fields_exactly_equal": 56760,
+        "excluded_fields": [],
+        "maximum_numeric_difference": 0.0
+      },
+      "cell_date_availability.csv": {
+        "scientific_fields_exactly_equal": 3019184,
+        "finite_numeric_fields_exactly_equal": 1878042,
+        "excluded_fields": [],
+        "maximum_numeric_difference": 0.0
+      },
+      "coverage_autocorrelation.csv": {
+        "scientific_fields_exactly_equal": 3060,
+        "finite_numeric_fields_exactly_equal": 1836,
+        "excluded_fields": [],
+        "maximum_numeric_difference": 0.0
+      },
+      "factorial_interactions.csv": {
+        "scientific_fields_exactly_equal": 360,
+        "finite_numeric_fields_exactly_equal": 300,
+        "excluded_fields": [],
+        "maximum_numeric_difference": 0.0
+      },
+      "factorial_paired_comparisons.csv": {
+        "scientific_fields_exactly_equal": 2349,
+        "finite_numeric_fields_exactly_equal": 2268,
+        "excluded_fields": [],
+        "maximum_numeric_difference": 0.0
+      },
+      "factorial_per_date.csv": {
+        "scientific_fields_exactly_equal": 65682,
+        "finite_numeric_fields_exactly_equal": 51264,
+        "excluded_fields": [],
+        "maximum_numeric_difference": 0.0
+      },
+      "factorial_summary.csv": {
+        "scientific_fields_exactly_equal": 2862,
+        "finite_numeric_fields_exactly_equal": 2592,
+        "excluded_fields": [
+          "elapsed_seconds"
+        ],
+        "maximum_numeric_difference": 0.0
+      },
+      "paired_comparisons.csv": {
+        "scientific_fields_exactly_equal": 7569,
+        "finite_numeric_fields_exactly_equal": 7308,
+        "excluded_fields": [],
+        "maximum_numeric_difference": 0.0
+      },
+      "per_date.csv": {
+        "scientific_fields_exactly_equal": 213600,
+        "finite_numeric_fields_exactly_equal": 169812,
+        "excluded_fields": [],
+        "maximum_numeric_difference": 0.0
+      },
+      "release_timeline.csv": {
+        "scientific_fields_exactly_equal": 36,
+        "finite_numeric_fields_exactly_equal": 3,
+        "excluded_fields": [],
+        "maximum_numeric_difference": 0.0
+      },
+      "selection_decomposition.csv": {
+        "scientific_fields_exactly_equal": 390,
+        "finite_numeric_fields_exactly_equal": 330,
+        "excluded_fields": [],
+        "maximum_numeric_difference": 0.0
+      },
+      "selection_groups.csv": {
+        "scientific_fields_exactly_equal": 1080,
+        "finite_numeric_fields_exactly_equal": 894,
+        "excluded_fields": [],
+        "maximum_numeric_difference": 0.0
+      },
+      "summary.csv": {
+        "scientific_fields_exactly_equal": 9180,
+        "finite_numeric_fields_exactly_equal": 8370,
+        "excluded_fields": [
+          "elapsed_seconds"
+        ],
+        "maximum_numeric_difference": 0.0
+      }
+    },
+    "json_leaf_fields_exactly_equal": {
+      "results.json": 17054,
+      "calibration_radii.json": 13744,
+      "factorial_results.json": 3226,
+      "factorial_radii.json": 534,
+      "release_timeline.json": 37,
+      "dependence_diagnostics.json": 658,
+      "synthetic_checks.json": 10
+    },
+    "total_csv_scientific_fields_checked": 3409696,
+    "total_csv_finite_numeric_fields_checked": 2182805,
+    "maximum_numeric_difference": 0.0,
+    "replica_main_resources": {
+      "start_utc": "2026-10-11T11:24:23.776098+00:00",
+      "end_utc": "2026-10-11T11:25:55.730461+00:00",
+      "wall_seconds": 91.95300000000861,
+      "measurement": "Windows GetProcessMemoryInfo",
+      "working_set_bytes": 718954496,
+      "os_peak_working_set_bytes": 1071734784,
+      "private_commit_bytes": 759840768,
+      "os_peak_pagefile_usage_bytes": 1007591424
+    },
+    "replica_factorial_resources": {
+      "start_utc": "2026-10-11T11:26:01.349262+00:00",
+      "end_utc": "2026-10-11T11:26:18.371055+00:00",
+      "wall_seconds": 17.01600000000326,
+      "measurement": "Windows GetProcessMemoryInfo",
+      "working_set_bytes": 524361728,
+      "os_peak_working_set_bytes": 939696128,
+      "private_commit_bytes": 539168768,
+      "os_peak_pagefile_usage_bytes": 821891072
+    }
+  }
+}

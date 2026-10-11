@@ -1,0 +1,47 @@
+{
+  "milestones": [
+    {
+      "target": "amsterdam",
+      "last_observation_date_in_product": "2024-12-29",
+      "last_observation_plus72_days": "2025-03-11",
+      "release_announcement_date": "2026-04-29",
+      "announcement_lag_after_last_observation_days": 486,
+      "last_observation_plus72_is_before_announcement": true,
+      "specific_file_first_public_access_date_verified": false,
+      "simulated_test_first_origin": "2022-11-10",
+      "simulated_test_last_origin": "2024-10-18",
+      "feature_observation_cutoff": "at or before each simulated origin",
+      "released_series_processing_window_cutoff": "2024-12-29",
+      "announcement_source": "https://land.copernicus.eu/en/news/egms-annual-update-brings-new-data-improvements-to-egms-explorer"
+    },
+    {
+      "target": "venice",
+      "last_observation_date_in_product": "2024-12-31",
+      "last_observation_plus72_days": "2025-03-13",
+      "release_announcement_date": "2026-04-29",
+      "announcement_lag_after_last_observation_days": 484,
+      "last_observation_plus72_is_before_announcement": true,
+      "specific_file_first_public_access_date_verified": false,
+      "simulated_test_first_origin": "2022-11-12",
+      "simulated_test_last_origin": "2024-10-20",
+      "feature_observation_cutoff": "at or before each simulated origin",
+      "released_series_processing_window_cutoff": "2024-12-31",
+      "announcement_source": "https://land.copernicus.eu/en/news/egms-annual-update-brings-new-data-improvements-to-egms-explorer"
+    },
+    {
+      "target": "alps",
+      "last_observation_date_in_product": "2024-12-29",
+      "last_observation_plus72_days": "2025-03-11",
+      "release_announcement_date": "2026-04-29",
+      "announcement_lag_after_last_observation_days": 486,
+      "last_observation_plus72_is_before_announcement": true,
+      "specific_file_first_public_access_date_verified": false,
+      "simulated_test_first_origin": "2022-11-10",
+      "simulated_test_last_origin": "2024-10-18",
+      "feature_observation_cutoff": "at or before each simulated origin",
+      "released_series_processing_window_cutoff": "2024-12-29",
+      "announcement_source": "https://land.copernicus.eu/en/news/egms-annual-update-brings-new-data-improvements-to-egms-explorer"
+    }
+  ],
+  "scope": "Version-wide announcement, not an independently archived timestamp of each file's first public access"
+}

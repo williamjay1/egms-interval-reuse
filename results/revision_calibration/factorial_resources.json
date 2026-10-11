@@ -1,0 +1,10 @@
+{
+  "start_utc": "2026-10-11T11:14:33.382964+00:00",
+  "end_utc": "2026-10-11T11:14:50.694930+00:00",
+  "wall_seconds": 17.31199999999808,
+  "measurement": "Windows GetProcessMemoryInfo",
+  "working_set_bytes": 525107200,
+  "os_peak_working_set_bytes": 939515904,
+  "private_commit_bytes": 539664384,
+  "os_peak_pagefile_usage_bytes": 822665216
+}

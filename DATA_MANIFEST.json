@@ -1,0 +1,60 @@
+{
+  "raw_files_not_redistributed": true,
+  "source": "https://egms.land.copernicus.eu/",
+  "products": [
+    {
+      "key": "amsterdam",
+      "display_name": "Amsterdam",
+      "filename": "EGMS_L2b_088_0312_IW1_VV_2020_2024_1.csv",
+      "sha256": "EC0B9BC1879A85E4962327170060091BEE2ECA1ED001A6A9D82829BE1CD05E62",
+      "points": 338161,
+      "date_count": 208,
+      "bbox_order": "minimum longitude, maximum longitude, minimum latitude, maximum latitude",
+      "bbox_lon_lat": [
+        4.556039,
+        4.97315,
+        52.445694,
+        52.666226
+      ],
+      "release": "2020_2024_1",
+      "geometry": "ascending VV",
+      "level": "Calibrated L2b"
+    },
+    {
+      "key": "venice",
+      "display_name": "Venice",
+      "filename": "EGMS_L2b_117_0266_IW3_VV_2020_2024_1.csv",
+      "sha256": "BF57107E27A8E8CA604C4FC3E50A9520BF39EEE3B8188E948D46A4FE0E471E40",
+      "points": 64133,
+      "date_count": 206,
+      "bbox_order": "minimum longitude, maximum longitude, minimum latitude, maximum latitude",
+      "bbox_lon_lat": [
+        12.1965,
+        12.343669,
+        45.156494,
+        45.34808
+      ],
+      "release": "2020_2024_1",
+      "geometry": "ascending VV",
+      "level": "Calibrated L2b"
+    },
+    {
+      "key": "alps",
+      "display_name": "Jura",
+      "filename": "EGMS_L2b_088_0278_IW2_VV_2020_2024_1.csv",
+      "sha256": "015FFEC4AF6D51E82669A64BE57F6EC69D10F3960A9E3A568AC32945CDB297B2",
+      "points": 32678,
+      "date_count": 209,
+      "bbox_order": "minimum longitude, maximum longitude, minimum latitude, maximum latitude",
+      "bbox_lon_lat": [
+        6.491081,
+        6.840354,
+        46.97286,
+        47.149877
+      ],
+      "release": "2020_2024_1",
+      "geometry": "ascending VV",
+      "level": "Calibrated L2b"
+    }
+  ]
+}

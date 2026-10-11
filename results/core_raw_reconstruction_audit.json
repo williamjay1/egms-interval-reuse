@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "actual_full_raw_reconstruction_completed": true,
+  "initial_inputs": "two core scripts and three path-free provenance JSONs only; no npy files",
+  "raw_originals_remained_read_only": true,
+  "raw_sha256_all_match": true,
+  "reconstructed_series_values_exactly_equal": true,
+  "cache_container_note": "Inherited series use Fortran-ordered npy; reconstructed series use C-ordered npy. File fingerprints differ due solely to container layout; all float32 measurement values are identical.",
+  "core_arrays_sha256_exactly_equal_count": 66,
+  "numerical_comparison_count": 3567,
+  "maximum_absolute_numerical_difference": 0.0,
+  "comparison_tolerance": 1e-08,
+  "comparisons": {
+    "frozen_contract": "passed",
+    "fitted_models": "passed",
+    "baselines": "passed",
+    "reference_shift_controls": "passed",
+    "amsterdam_global_calibration_radii_mm": "passed"
+  },
+  "all_phase_dates_indices_dropouts_interpolation_and_counts_equal": true,
+  "fresh_wall_seconds": 176.06686799999443,
+  "fresh_observed_peak_working_set_bytes": 3524083712,
+  "fresh_invocation": "python analysis/run_revision_core.py --raw-dir <verified original CSV directory>",
+  "script_change_scope": "Added raw CSV reconstruction and cache fingerprint verification after initial numerical run; no numerical method changes.",
+  "reconstruction_core_module_sha256": "74FB2742BC220E7797EB05C89F051D0AFFF8518FDF4F0447A603E724101D1D1C",
+  "reconstruction_driver_sha256": "DF5FF3E577494391B2115B02086FEFFA1749061915666B6903E06A3EB48C4499"
+}

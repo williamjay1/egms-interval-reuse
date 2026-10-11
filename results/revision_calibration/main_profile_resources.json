@@ -1,0 +1,13 @@
+{
+  "start_utc": "2026-10-11T11:17:46.812704+00:00",
+  "end_utc": "2026-10-11T11:19:32.886669+00:00",
+  "wall_seconds": 106.07800000000134,
+  "measurement": "Windows GetProcessMemoryInfo",
+  "working_set_bytes": 716611584,
+  "os_peak_working_set_bytes": 1073025024,
+  "private_commit_bytes": 758411264,
+  "os_peak_pagefile_usage_bytes": 1008308224,
+  "measurement_run": "Complete main computation replay with scientific table writes omitted",
+  "scientific_summary_exactly_reproduced": true,
+  "filesystem_cache_state": "previously read, not a cold-start benchmark"
+}

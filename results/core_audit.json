@@ -1,0 +1,106 @@
+{
+  "actually_checked": true,
+  "status": "passed",
+  "checks": {
+    "amsterdam": {
+      "dates_boundaries_common_test_and_all_cache_finite": "passed",
+      "complete_models": 7,
+      "paired_model_differences": 21,
+      "origin_count": 137,
+      "point_count": 338161
+    },
+    "venice": {
+      "dates_boundaries_common_test_and_all_cache_finite": "passed",
+      "complete_models": 7,
+      "paired_model_differences": 21,
+      "origin_count": 130,
+      "point_count": 64133
+    },
+    "alps": {
+      "dates_boundaries_common_test_and_all_cache_finite": "passed",
+      "complete_models": 7,
+      "paired_model_differences": 21,
+      "origin_count": 138,
+      "point_count": 32678
+    }
+  },
+  "maximum_direct_raw_coefficient_cache_prediction_difference_mm": 0.0,
+  "all_reference_shift_identities_passed": true,
+  "venice_reference_shift_summary": {
+    "ridge_level": [
+      {
+        "c_mm": -10,
+        "mae_mm": 4.950903077838938,
+        "bias_mm": 4.5301758535720476,
+        "coverage": 0.6935205233520642,
+        "analytic_change_mm": 2.267431015752127
+      },
+      {
+        "c_mm": -5,
+        "mae_mm": 4.052058157574908,
+        "bias_mm": 3.3964603456959894,
+        "coverage": 0.7967402870220668,
+        "analytic_change_mm": 1.1337155078760635
+      },
+      {
+        "c_mm": 0,
+        "mae_mm": 3.3077875585267487,
+        "bias_mm": 2.2627448378199277,
+        "coverage": 0.860348403129918,
+        "analytic_change_mm": -0.0
+      },
+      {
+        "c_mm": 5,
+        "mae_mm": 2.811710987261287,
+        "bias_mm": 1.1290293299438656,
+        "coverage": 0.8939219520640566,
+        "analytic_change_mm": -1.1337155078760635
+      },
+      {
+        "c_mm": 10,
+        "mae_mm": 2.658070683062382,
+        "bias_mm": -0.004686177932198567,
+        "coverage": 0.9046249254646997,
+        "analytic_change_mm": -2.267431015752127
+      }
+    ],
+    "ridge_increment": [
+      {
+        "c_mm": -10,
+        "mae_mm": 2.6234151054855364,
+        "bias_mm": 0.6139353158556105,
+        "coverage": 0.9074009453414967,
+        "analytic_change_mm": -0.0
+      },
+      {
+        "c_mm": -5,
+        "mae_mm": 2.6234151054855364,
+        "bias_mm": 0.6139353158556105,
+        "coverage": 0.9074009453414967,
+        "analytic_change_mm": -0.0
+      },
+      {
+        "c_mm": 0,
+        "mae_mm": 2.6234151054855364,
+        "bias_mm": 0.6139353158556105,
+        "coverage": 0.9074009453414967,
+        "analytic_change_mm": 0.0
+      },
+      {
+        "c_mm": 5,
+        "mae_mm": 2.6234151054855364,
+        "bias_mm": 0.6139353158556105,
+        "coverage": 0.9074009453414967,
+        "analytic_change_mm": 0.0
+      },
+      {
+        "c_mm": 10,
+        "mae_mm": 2.6234151054855364,
+        "bias_mm": 0.6139353158556105,
+        "coverage": 0.9074009453414967,
+        "analytic_change_mm": 0.0
+      }
+    ]
+  },
+  "scope": "saved completed output consistency, cache finiteness, common schedules and direct raw-unit equation evaluation; no independent physical validation"
+}

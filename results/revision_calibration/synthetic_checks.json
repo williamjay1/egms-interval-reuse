@@ -1,0 +1,12 @@
+{
+  "maturity_strict_before": "passed",
+  "pre_calibration_cutoff_excluded": "passed",
+  "exact_order_statistic": "passed",
+  "selection_decomposition": "passed",
+  "calibration_keeps_prediction_centers": "passed in production evaluator",
+  "equal_cell_rmse_root_after_weighting": "passed",
+  "tail_identity": "passed",
+  "real_fixed_centers_same_mae_and_pairs": "passed for all calibration-only protocols",
+  "real_strict_rolling_maturity": "passed for all rolling windows",
+  "real_selection_decomposition": "passed for all 30 selection comparisons"
+}

@@ -1,0 +1,240 @@
+{
+  "revision": "REV2",
+  "files": [
+    {
+      "path": "analysis/build_nature_figures.py",
+      "bytes": 25874,
+      "sha256": "2E1BE67FE4AA443F56AF69B7B5C93E300CB1DFC88348705F34306F039862CF1F"
+    },
+    {
+      "path": "analysis/build_revision_tables.py",
+      "bytes": 14909,
+      "sha256": "03F54AF2CACC617277329F0EAA0D5B6AAC1FB3893312A5E478D46A3A26E50663"
+    },
+    {
+      "path": "analysis/cache/alps_provenance.json",
+      "bytes": 10063,
+      "sha256": "085320D8B6592C4B268088223DDAA33E7AAA95B8CD1995C3CCD6AB5DA2597306"
+    },
+    {
+      "path": "analysis/cache/amsterdam_provenance.json",
+      "bytes": 10053,
+      "sha256": "ED6B86E96C364A8109A314B360F74C5EB55D5653F53003D6AD39630D9750D541"
+    },
+    {
+      "path": "analysis/cache/core/alps/metadata.json",
+      "bytes": 18831,
+      "sha256": "041F716B338621794FB3A305209DF8FB438F114FA5491AAD8EA54E3EF4EC38F6"
+    },
+    {
+      "path": "analysis/cache/core/amsterdam/metadata.json",
+      "bytes": 19259,
+      "sha256": "9888E1125124356202366BDE05B218D03390CD14A7F485D416B062CFDB1FD5D0"
+    },
+    {
+      "path": "analysis/cache/core/venice/metadata.json",
+      "bytes": 19621,
+      "sha256": "A6E887C91BA6038F7DFE9475D996384B13AEA5397A138FD9D120A023BA1EBA32"
+    },
+    {
+      "path": "analysis/cache/venice_provenance.json",
+      "bytes": 9925,
+      "sha256": "651B85839E5EB01772A68035950919DF829278C274B9E66933013F693A6F3771"
+    },
+    {
+      "path": "analysis/requirements.txt",
+      "bytes": 29,
+      "sha256": "070F5896FD858CF0C9DDEAE65EA49AEA528AEAB1BC0A358A90BE340F19E96ABA"
+    },
+    {
+      "path": "analysis/requirements_figures.txt",
+      "bytes": 82,
+      "sha256": "23DFB06B1F9E19BE0DEF13FBB0BD535E6BA1AEEE89C825BC2F6C4D8B825C9808"
+    },
+    {
+      "path": "analysis/revision_core.py",
+      "bytes": 28144,
+      "sha256": "74FB2742BC220E7797EB05C89F051D0AFFF8518FDF4F0447A603E724101D1D1C"
+    },
+    {
+      "path": "analysis/run_revision_calibration.py",
+      "bytes": 48409,
+      "sha256": "C8E0C9EFBA35EB61B01F34F2C9C6ABBA7C381E0083B782851A9F0E9957D4DFB7"
+    },
+    {
+      "path": "analysis/run_revision_core.py",
+      "bytes": 22254,
+      "sha256": "3968628A21CF9B425F9926A4D7207AEDD97A81395E8E339E27B1463486530EF9"
+    },
+    {
+      "path": "analysis/verify_revision_calibration.py",
+      "bytes": 8396,
+      "sha256": "039CDF1D93FECF99BD8F82B44AB63C21DFF7585822E4079EC4468C3E0EB740AF"
+    },
+    {
+      "path": "DATA_MANIFEST.json",
+      "bytes": 1854,
+      "sha256": "39C17BCAB474EC7F64C86C4307D35A70AABC468D1F8442165625423F266FB51F"
+    },
+    {
+      "path": "figures/source_data/europe_locator.json",
+      "bytes": 27688,
+      "sha256": "E7EA43A6E7B4045F74CC7542610826D514820FDBCFEB25B1432924A908532E69"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5665,
+      "sha256": "546DFA6A2A1A404FB94AA6D81DC000591C9378056DAB0419D12E8FCFF84E5706"
+    },
+    {
+      "path": "results/core_audit.json",
+      "bytes": 3134,
+      "sha256": "7DA653493E2AAEEC597BCC833CD9C49B9C50BCFFFFE908AA70BBDAE9EDE02013"
+    },
+    {
+      "path": "results/core_raw_reconstruction_audit.json",
+      "bytes": 1558,
+      "sha256": "BAE3FA2FD4316C7EC59EC83A805C83D33B3F92904D745028C035ACDC2CBCB9E7"
+    },
+    {
+      "path": "results/core_results.json",
+      "bytes": 202134,
+      "sha256": "213147EF69D105E02FC9F59E2877FBDD01161CC5C14F290ABB57C81F536677C2"
+    },
+    {
+      "path": "results/revision_calibration/calibration_radii.json",
+      "bytes": 314871,
+      "sha256": "CCBBB19BDF8FF6D2BCBBB2199A8D78B27B9827D6FF3A1E72E5691C80D79763B5"
+    },
+    {
+      "path": "results/revision_calibration/calibration_raw_reconstruction_verified.json",
+      "bytes": 5835,
+      "sha256": "D1209BB7E5B6FA9EC4650D7A8481646B49CFE12532F93D2AB63ADA10C2E0ACEE"
+    },
+    {
+      "path": "results/revision_calibration/calibration_usage.csv",
+      "bytes": 144783,
+      "sha256": "AAED66ED7766E5783239787030D9048B0BFF48D4943D48ADB9FD194A61FA5C8A"
+    },
+    {
+      "path": "results/revision_calibration/calibration_validation.json",
+      "bytes": 5835,
+      "sha256": "D1209BB7E5B6FA9EC4650D7A8481646B49CFE12532F93D2AB63ADA10C2E0ACEE"
+    },
+    {
+      "path": "results/revision_calibration/cell_availability.csv",
+      "bytes": 578059,
+      "sha256": "F1689D1AB84FF4E35A4EA325396C13B576C20809761EE593ED80A5231AA87EB0"
+    },
+    {
+      "path": "results/revision_calibration/cell_date_availability.csv",
+      "bytes": 25450086,
+      "sha256": "40475FEE91089E0EEB3E28EB75888139E6865BD9878BF0F1042C7424F3185B04"
+    },
+    {
+      "path": "results/revision_calibration/coverage_autocorrelation.csv",
+      "bytes": 36297,
+      "sha256": "02D58837239CC2058DD144414E7E64B37391D04AA100C4ABD05599B45C643F23"
+    },
+    {
+      "path": "results/revision_calibration/dependence_diagnostics.json",
+      "bytes": 35296,
+      "sha256": "321304ECD78D2EEF7F4C2782E7FBB2CB3DAB9B6BDDAA5C94ECAF50044C23DFED"
+    },
+    {
+      "path": "results/revision_calibration/factorial_interactions.csv",
+      "bytes": 5750,
+      "sha256": "C8C98B4D892F6C0CFDF81DE32B074E389BA1A8B80F6E03CEB70F420E611F3CED"
+    },
+    {
+      "path": "results/revision_calibration/factorial_paired_comparisons.csv",
+      "bytes": 44079,
+      "sha256": "68EAEBCA05C16303681F57A58F166F65231F45385EAA1CA8193C5E91CB3F4FB4"
+    },
+    {
+      "path": "results/revision_calibration/factorial_per_date.csv",
+      "bytes": 873945,
+      "sha256": "770B99618F2E7BE41E66BDD4EFCF097F6A31BBD1ECF5369433B041D89D2CE175"
+    },
+    {
+      "path": "results/revision_calibration/factorial_radii.json",
+      "bytes": 8514,
+      "sha256": "BAF9EC4B6A4CC976C87479F7D667B436E6FAF2DD0FBE0439B7120DD985377894"
+    },
+    {
+      "path": "results/revision_calibration/factorial_resource_samples.csv",
+      "bytes": 3078,
+      "sha256": "78EA6AFAB5FCF08D1167878CD015F94EC12FA2B52A4FFF9A0AF7A82B50395161"
+    },
+    {
+      "path": "results/revision_calibration/factorial_resources.json",
+      "bytes": 355,
+      "sha256": "7DAEC51CC7344D4548CFC7A3F8EDEE60C9CCCA6330604B7A06776145748AC704"
+    },
+    {
+      "path": "results/revision_calibration/factorial_results.json",
+      "bytes": 167834,
+      "sha256": "6392E1FB88B5D43B7FA85F8FEAC5BC4AF517964E1BD7A1D6F01CB13521D7F891"
+    },
+    {
+      "path": "results/revision_calibration/factorial_summary.csv",
+      "bytes": 50895,
+      "sha256": "56CE61671032B502E1826DF55D58EF300B2D144E49BD97D624640F1C34512724"
+    },
+    {
+      "path": "results/revision_calibration/main_profile_resources.json",
+      "bytes": 579,
+      "sha256": "195A0D25A53C8F101352205E5F75B19D0E68CAA04E1016111E73385810CFAC7F"
+    },
+    {
+      "path": "results/revision_calibration/main_resources.json",
+      "bytes": 425,
+      "sha256": "856F0591AB222C5CA7EB301099197EDFE7F22604881B530FBAD8BCDBC4F39842"
+    },
+    {
+      "path": "results/revision_calibration/paired_comparisons.csv",
+      "bytes": 122344,
+      "sha256": "A8745EF4AAEED0E5A3D1D98B4B1EC04BB5BF4BDF9FBDDED3093D783B22F26E90"
+    },
+    {
+      "path": "results/revision_calibration/per_date.csv",
+      "bytes": 2780002,
+      "sha256": "7FB0CB670E317C2F8D4DE5638AF2FADF70D905B7CEFE036326E4930DC637FA45"
+    },
+    {
+      "path": "results/revision_calibration/release_timeline.csv",
+      "bytes": 1052,
+      "sha256": "CA42B8AFB7760EA63E3BA66FF5FA415E68B2894F1AED0F0CC87976F48AC123B6"
+    },
+    {
+      "path": "results/revision_calibration/release_timeline.json",
+      "bytes": 2440,
+      "sha256": "4F8D43A87930858B319E133CD47A650C5AFFCF9794A62A5C9155C1BE56573B1A"
+    },
+    {
+      "path": "results/revision_calibration/results.json",
+      "bytes": 926831,
+      "sha256": "0E6DDBB4446A312AC3DD7A5794794F5BAA6C032A2E2A9A0812828958A83C8221"
+    },
+    {
+      "path": "results/revision_calibration/selection_decomposition.csv",
+      "bytes": 6124,
+      "sha256": "C56069551D5971319DF02E7049EEDD8A79C815D61992A315D262722BD8D16A3C"
+    },
+    {
+      "path": "results/revision_calibration/selection_groups.csv",
+      "bytes": 11441,
+      "sha256": "D746B08B9FEA556A9C792F39165D41E3C14C93900F40E551AF3DA9B01056127C"
+    },
+    {
+      "path": "results/revision_calibration/summary.csv",
+      "bytes": 159209,
+      "sha256": "20A7363145F5BDDDA6F2FEB2268AFBB19D2AE2720A39750CCB1402BAC5F665FB"
+    },
+    {
+      "path": "results/revision_calibration/synthetic_checks.json",
+      "bytes": 564,
+      "sha256": "EBFC601811463A4C3C47EC4C3A9A840F5BC12C7680210406B0C63C1EACA4BC83"
+    }
+  ]
+}
